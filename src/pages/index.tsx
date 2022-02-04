@@ -8,8 +8,8 @@ import EncurtaLink from "@components/EncurtaLink";
 const Home = () => {
   return (
     <>
-      <Calculadora />
-      {/*       <EncurtaLink /> */}
+      {/*  <Calculadora /> */}
+      <EncurtaLink />
     </>
   );
 };

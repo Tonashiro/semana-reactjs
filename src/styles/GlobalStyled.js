@@ -17,12 +17,10 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
 	vertical-align: baseline;
   scroll-behavior: smooth;
   text-decoration: none;
   box-sizing: border-box;
-	font: inherit;
   color: inherit;
   font-family: 'Lato', sans-serif;
 }
