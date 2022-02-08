@@ -7,8 +7,12 @@
 ### Seções do curso: 
 - [x] Passo 1 - Introdução da semana e criação do projeto
 - [x] Passo 2 - Configuração do ambiente
-- [ ] Passo 3 - Projeto I
-- [ ] Passo 4 - Projeto II
-- [ ] Passo 5 - Otimizações e melhorias pessoais dos projetos
+- [x] Passo 3 - Projeto I
+- [x] Passo 4 - Projeto II
+
+### NextLevel da aplicação(mudanças pessoais):
+- [ ] Passo 1 - Criar um painel de entrada
+- [ ] Passo 2 - Criar novas animações
+- [ ] Passo 3 - Criar novas funcionalidades utilizando LocalStorage
 
 
