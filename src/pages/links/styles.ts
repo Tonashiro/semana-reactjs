@@ -19,6 +19,10 @@ export const Container = styled.div`
   svg {
     cursor: pointer;
   }
+
+  button {
+    cursor: pointer;
+  }
 `;
 
 export const Header = styled.div`
@@ -51,7 +55,7 @@ export const LinkContainer = styled.div`
   width: 700px;
 
   margin-top: 8px;
-
+  
   &:last-child {
     margin-bottom: 18px;
   }
@@ -81,6 +85,11 @@ export const LinkContainer = styled.div`
       margin-right: 14px;
       overflow: visible;
     }
+  }
+
+  h2 {
+    color: #FFF;
+    margin-top: 30px;
   }
 
   @media (max-width: 768px) {
