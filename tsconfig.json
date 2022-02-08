@@ -25,6 +25,6 @@
       "./node_modules/@types"
     ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/index.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/index.js", "src/components/Modal/index.js", "src/components/EncurtaLink/index.jsx"],
   "exclude": ["node_modules"]
 }

@@ -56,7 +56,7 @@ export const LinkContainer = styled.div`
 
   width: 540px; 
 
-  animation: ${slideY} 1.5s ease-in-out;
+  animation: ${slideY} .3s ease-in-out;
 
   button {
     width: 100%;
@@ -80,7 +80,7 @@ export const LinkContainer = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 85%;
+    width: 70%;
   }
 `;
 
