@@ -2,10 +2,12 @@ import styled, {keyframes} from "styled-components";
 
 const slideY = keyframes`
   from {
-    transform: translateY(150px)
+    transform: translateY(150px);
+    opacity: 0;
   }
   to {
-    transform: translateY(0)
+    transform: translateY(0);
+    opacity: 1;
   }
 `
 
@@ -56,7 +58,7 @@ export const LinkContainer = styled.div`
 
   width: 540px; 
 
-  animation: ${slideY} .3s ease-in-out;
+  animation: ${slideY} .7s ease-in-out;
 
   button {
     width: 100%;

@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import { saveLink } from "../../services/storeLinks"
 // Styles
 import { Container, LinkContainer, Link } from "./styles";
 
@@ -36,6 +36,7 @@ export const EncurtaLink = ({ api }) => {
 
       setData(response.data)
       setShowModal(true);
+      saveLink("encurtaLink", response.data);
       setLink("");
 
     }
