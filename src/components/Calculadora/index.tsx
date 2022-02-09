@@ -1,5 +1,7 @@
 // Libs
 import React, { useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // Styles
 import { Container, Form } from "./styles";
@@ -30,27 +32,33 @@ export const Calculadora = () => {
     }
   }
 
+  if (process.browser) {
+    AOS.init();
+  }
+
   return (
     <Container>
-      <h1>Calculadora IMC</h1>
+      <div data-aos="fade-down-right" data-aos-delay="100">
+        <h1>Calculadora IMC</h1>
 
-      <Form>
-        <input
-          type="text"
-          placeholder="Peso em (kg) Ex: 98"
-          value={peso}
-          onChange={(e) => setPeso(e.target.value)}
-        />
-        <input
-          type="text"
-          placeholder="Altura em (cm) Ex: 180"
-          value={altura}
-          onChange={(e) => setAltura(e.target.value)}
-        />
-        <button onClick={calcularIMC}>Calcular</button>
-      </Form>
+        <Form>
+          <input
+            type="text"
+            placeholder="Peso em (kg) Ex: 98"
+            value={peso}
+            onChange={(e) => setPeso(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Altura em (cm) Ex: 180"
+            value={altura}
+            onChange={(e) => setAltura(e.target.value)}
+          />
+          <button onClick={calcularIMC}>Calcular</button>
+        </Form>
 
-      <h2>{mensagem}</h2>
+        <h2>{mensagem}</h2>
+      </div>
     </Container>
   );
 };

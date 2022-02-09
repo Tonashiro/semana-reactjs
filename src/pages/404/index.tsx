@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 
 // Styles
-import { Container } from "./styles";
+import { Container } from "../../styles/404";
 
 const NotFound = () => {
   return (

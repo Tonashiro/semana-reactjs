@@ -2,9 +2,11 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { getLink, deleteLink } from "../../services/storeLinks";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // Styles
-import { Container, Header, LinkContainer, Delete } from "./styles";
+import { Container, Header, LinkContainer, Delete } from "../../styles/links";
 
 // Components
 import Modal from "@components/Modal";
@@ -23,6 +25,10 @@ const Links = () => {
   const [data, setData] = useState({});
   const [showModal, setShowModal] = useState(false);
   const [emptyList, setEmptyList] = useState(false);
+
+  if (process.browser) {
+    AOS.init();
+  }
 
   useEffect(() => {
     async function getLinks() {
@@ -52,6 +58,11 @@ const Links = () => {
     setMyLinks(result);
   }
 
+  function sleep(ms: number) {
+    console.log("Sleeping...");
+    return new Promise((resolve) => setTimeout(resolve, ms));
+  }
+
   return (
     <Container>
       <div>
@@ -67,7 +78,11 @@ const Links = () => {
           </LinkContainer>
         )}
         {myLinks.map((link: LinkProps) => (
-          <LinkContainer key={link.id}>
+          <LinkContainer
+            key={link.id}
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
             <button onClick={() => handleOpenLink(link)}>
               <FiLink size={18} color="#FFF" />
               {link.long_url}

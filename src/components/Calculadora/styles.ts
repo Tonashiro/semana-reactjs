@@ -5,13 +5,16 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
+  text-align: center;
+  
   width: 100%;
   height: 100vh;
+  background-color: #132742;
 
   h1 {
     font-size: 50px;
     margin-bottom: 20px;
+    color: #FFF;
   }
 
   h2 {
@@ -63,6 +66,11 @@ export const Form = styled.div`
     &:hover {
       background-color: #4135ff;
     }
+  }
+
+  @media(max-width: 768px) {
+    width: 80%;
+    margin: 0 auto;
   }
 `;
 
