@@ -13,6 +13,5 @@
 ### NextLevel da aplicação(mudanças pessoais):
 - [x] Passo 1 - Criar um painel de entrada
 - [x] Passo 2 - Criar novas animações
-- [ ] Passo 3 - Criar novas funcionalidades utilizando LocalStorage
 
 
