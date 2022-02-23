@@ -1,6 +1,6 @@
 # Semana ReactJS - Sujeito Programador
 
-Link para acessar o projeto: semana-reactjs.vercel.app 
+Link para acessar o projeto: <a href="semana-reactjs.vercel.app" target="_blank">semana-reactjs.vercel.app</a> 
 
 ![png-transparent-programmer-computer-programming-drawing-others-photography-computer-logo-removebg-preview](https://user-images.githubusercontent.com/61607403/152074873-14046e91-baad-4eed-b4ca-d36f1aeb37db.png)
 
