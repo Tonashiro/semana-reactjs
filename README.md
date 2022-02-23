@@ -2,9 +2,7 @@
 
 Link para acessar o projeto: <a href="https://semana-reactjs.vercel.app" target="_blank">semana-reactjs.vercel.app</a> 
 
-<p align="center">
-  <img width="100%" height="100%" src="public/encurta_link.gif"/>
-</p>
+![encurta_link](https://user-images.githubusercontent.com/61607403/155340205-23f33c24-73bd-465f-8129-ab212cd55bae.gif)
 
 ## Repositório desenvolvido para realizar a semana ReactJS, ministrada pelo canal do Sujeito Programador.
 
